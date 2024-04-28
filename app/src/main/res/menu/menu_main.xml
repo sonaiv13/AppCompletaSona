@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.appcompletasona.ui.activities.MainActivity">
+    <item
+        android:id="@+id/irListaFav"
+        android:orderInCategory="100"
+        android:title="Favoritos"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/irInicio"
+        android:orderInCategory="100"
+        android:title="Ir a inicio"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/salir"
+        android:orderInCategory="100"
+        android:title="Salir"
+        app:showAsAction="never" />
+
+</menu>

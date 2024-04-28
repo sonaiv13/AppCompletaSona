@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.appcompletasona.ui.fragments.LoginFragment"
+        android:label="@string/label_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registroFragment"
+            app:destination="@id/registroFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="correo"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="com.example.appcompletasona.ui.fragments.RegistroFragment"
+        android:label="@string/label_signin"
+        tools:layout="@layout/fragment_registro">
+        <action
+            android:id="@+id/action_registroFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <argument
+            android:name="nombre"
+            app:argType="string" />
+        <argument
+            android:name="correo"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.appcompletasona.ui.fragments.MainFragment"
+        android:label="Principal"
+        tools:layout="@layout/fragment_main">
+        <argument
+            android:name="correo"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_mainFragment_to_ligaFragment"
+            app:destination="@id/ligaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ligaFragment"
+        android:name="com.example.appcompletasona.ui.fragments.LigaFragment"
+        android:label="Liga Seleccionada"
+        tools:layout="@layout/fragment_liga">
+        <argument
+            android:name="ligaSeleccionada"
+            app:argType="com.example.appcompletasona.model.Liga" />
+        <argument
+            android:name="nombreLiga"
+            app:argType="string" />
+        <argument
+            android:name="listaFav"
+            app:argType="com.example.appcompletasona.model.Equipo" />
+    </fragment>
+    <fragment
+        android:id="@+id/favFragment"
+        android:name="com.example.appcompletasona.ui.fragments.FavFragment"
+        android:label="FavFragment"
+        tools:layout="@layout/fragment_fav">
+        <argument
+            android:name="listaFav"
+            app:argType="com.example.appcompletasona.model.Equipo" />
+    </fragment>
+</navigation>

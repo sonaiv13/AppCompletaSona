@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "906601447210",
+    "firebase_url": "https://appcompletasona-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "appcompletasona",
+    "storage_bucket": "appcompletasona.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906601447210:android:0a9d2eb818cfbbb22e6853",
+        "android_client_info": {
+          "package_name": "com.example.appcompletasona"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnLd9LORtvrSaYIyN4RTl5kTHEsx4tR_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
