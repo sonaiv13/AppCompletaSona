@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.volley.Request
@@ -14,14 +12,13 @@ import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.example.appcompletasona.R
 import com.example.appcompletasona.adapter.LigasAdapter
-import com.example.appcompletasona.databinding.FragmentLoginBinding
 import com.example.appcompletasona.databinding.FragmentMainBinding
 import com.example.appcompletasona.model.Liga
 import com.google.android.material.snackbar.Snackbar
 import org.json.JSONArray
 import org.json.JSONObject
 
-class MainFragment: Fragment(), LigasAdapter.OnRecyclerLigasListener {
+class MainFragment: androidx.fragment.app.Fragment(), LigasAdapter.OnRecyclerLigasListener {
 
     private lateinit var binding: FragmentMainBinding
     private lateinit var ligasAdapter: LigasAdapter

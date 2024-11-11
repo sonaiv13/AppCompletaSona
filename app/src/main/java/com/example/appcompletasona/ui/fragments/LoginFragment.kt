@@ -4,17 +4,14 @@ import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.OnClickListener
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.appcompletasona.R
-import com.example.appcompletasona.databinding.ActivityMainBinding
 import com.example.appcompletasona.databinding.FragmentLoginBinding
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 
-class LoginFragment: Fragment() {
+class LoginFragment: androidx.fragment.app.Fragment() {
 
     private lateinit var binding: FragmentLoginBinding
     private var correo: String? = null
